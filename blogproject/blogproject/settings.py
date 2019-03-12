@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'comments.apps.CommentsConfig',
     'aboutme',
+    'contact.apps.ContactConfig',
 
 ]
 

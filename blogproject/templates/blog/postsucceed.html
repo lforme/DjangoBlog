@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load blog_tags %}
+{% load staticfiles %}
+<html>
+<head>
+    <title>王老师的日常</title>
+
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/pace.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/custom.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/highlights/github.css' %}">
+
+    <style>
+        span.highlighted {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="row row-centered">
+        <img class="post center-block" src="{% static 'blog/img/postsucceed.svg' %}">
+        <form action="goback_home" method="get" class="postsucceed-form">
+            <button type="submit" class="btn btn-success btn-block">返回首页</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
