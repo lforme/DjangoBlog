@@ -1,14 +1,13 @@
 from django.contrib.syndication.views import Feed
-
 from .models import Post
 
 
 class AllPostsRssFeed(Feed):
     # 显示在聚合阅读器上的标题
-    title = ""
+    title = "老王的日常"
 
     # 通过聚合阅读器跳转到网站的地址
-    link = "/"
+    link = "/rss/"
 
     # 显示在聚合阅读器上的描述信息
     description = ""
