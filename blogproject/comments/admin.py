@@ -4,4 +4,6 @@ from .models import Comment
 class CommentAdmin(admin.ModelAdmin):
     list_display = ['name', 'email', 'text']
 
-admin.site.register(Contact, ContactAdmin)
+admin.site.register(Comment, CommentAdmin)
+
+
